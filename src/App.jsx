@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Color from "./color";
+import Color from "./Color";
 import PhotoToggle from "./PhotoToggle";
 
 const App = () => (
@@ -11,6 +11,8 @@ const App = () => (
     <Color title="BLUE" />
     <Color title="YELLOW" />
     <Color title="GREEN" />
+    <Color />
+
     <PhotoToggle />
   </div>
 );
