@@ -1,12 +1,11 @@
 import React, { Component } from "react";
+import "./PhotoToggle.css";
 
 class PhotoToggle extends Component {
   state = {
     showPhoto: false
   };
   render() {
-    // console.log(this.state.showPhoto);
-
     const { showPhoto } = this.state;
     return (
       <>
