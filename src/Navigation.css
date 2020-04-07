@@ -1,0 +1,30 @@
+.navigation {
+  width: 1200px;
+  height: 60px;
+  background: rgb(184, 177, 177);
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  text-decoration: none;
+  list-style-type: none;
+  float: left;
+  margin: 20px 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  color: #000;
+}

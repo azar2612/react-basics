@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class MultiButton extends Component {
   state = {
-    color: ""
+    color: "rat"
   };
 
   changeColor = clr => this.setState({ color: clr });
@@ -10,7 +10,7 @@ class MultiButton extends Component {
   render() {
     const { color } = this.state;
     return (
-      <>
+      <div>
         <button type="button" onClick={() => this.setState({ color: "Red" })}>
           Red
         </button>
@@ -25,7 +25,7 @@ class MultiButton extends Component {
           Reset
         </button>
         <p>{color}</p>
-      </>
+      </div>
     );
   }
 }

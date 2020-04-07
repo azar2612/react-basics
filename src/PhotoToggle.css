@@ -3,11 +3,11 @@ button {
   margin-left: 14px;
   font-size: 15px;
   border-radius: 20px;
-  /* background: padding-box; */
   color: indigo;
   height: 54px;
-  width: 144px;
+  width: 108px;
   background: bottom;
   cursor: pointer;
   font-family: "Chelsea Market", cursive;
+  font-weight: 400;
 }

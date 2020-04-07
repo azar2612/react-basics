@@ -18,7 +18,7 @@ class PhotoToggle extends Component {
         </button>
 
         {showPhoto ? (
-          <img src="https://placeimg.com/800/400/nature" alt="" />
+          <img src="https://placeimg.com/300/300/nature" alt="" />
         ) : (
           <p>Photo Hidden</p>
         )}
