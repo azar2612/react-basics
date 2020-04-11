@@ -1,0 +1,42 @@
+.form-contact input[type="text"] {
+  width: 168px;
+  border-radius: 19px;
+  margin-left: 100px;
+  background: tan;
+  height: 30px;
+}
+
+.form-contact input[type="password"] {
+  width: 168px;
+  border-radius: 19px;
+  margin-left: 100px;
+  background: tan;
+  height: 30px;
+}
+.form-validate input[type="text"] {
+  width: 200px;
+  border-radius: 40px;
+  background: border-box;
+  height: 35px;
+  margin-left: 510px;
+}
+
+.form-validate input[type="email"] {
+  width: 200px;
+  border-radius: 40px;
+  background: border-box;
+  height: 35px;
+  margin-left: 510px;
+}
+
+.form-validate input[type="password"] {
+  width: 200px;
+  border-radius: 40px;
+  background: border-box;
+  height: 35px;
+  margin-left: 510px;
+}
+
+.form-validate button {
+  margin-left: 550px;
+}

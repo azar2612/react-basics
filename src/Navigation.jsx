@@ -12,6 +12,7 @@ const naviData = [
   "gallery",
   "Instagram",
   "Githubfetch",
+  "Form",
 ];
 
 const Navigation = () => (
