@@ -10,6 +10,9 @@ import Instagram from "./Instagram";
 import Githubfetch from "./Githubfetch";
 import Gallery from "./Gallery";
 import Form from "./Form";
+import Todo from "./Todo";
+import LiftState from "./LiftState";
+import LocalStorage from "./LocalStorage";
 
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
@@ -49,6 +52,9 @@ const App = () => (
         <Route exact path="/Instagram" component={Instagram} />
         <Route exact path="/Githubfetch" component={Githubfetch} />
         <Route exact path="/form" component={Form} />
+        <Route exact path="/Todo" component={Todo} />
+        <Route exact path="/LiftState" component={LiftState} />
+        <Route exact path="/LocalStorage" component={LocalStorage} />
       </Switch>
     </BrowserRouter>
   </div>
