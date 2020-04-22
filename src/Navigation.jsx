@@ -13,6 +13,9 @@ const naviData = [
   "Instagram",
   "Githubfetch",
   "Form",
+  "Todo",
+  "LiftState",
+  "LocalStorage",
 ];
 
 const Navigation = () => (
