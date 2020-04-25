@@ -10,6 +10,7 @@ import Instagram from "./Instagram";
 import Githubfetch from "./Githubfetch";
 import Gallery from "./Gallery";
 import Form from "./Form";
+import Validateform from "./Validateform";
 import Todo from "./Todo";
 import LiftState from "./LiftState";
 import LocalStorage from "./LocalStorage";
@@ -55,6 +56,7 @@ const App = () => (
         <Route exact path="/Todo" component={Todo} />
         <Route exact path="/LiftState" component={LiftState} />
         <Route exact path="/LocalStorage" component={LocalStorage} />
+        <Route exact path="/Validateform" component={Validateform} />
       </Switch>
     </BrowserRouter>
   </div>
