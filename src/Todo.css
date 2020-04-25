@@ -1,8 +1,10 @@
-input[type="text"] {
-  height: 50px;
-  width: 200px;
-  background: silver;
-  border-radius: 29px;
-  text-align: center;
-  /* margin-left: 400px; */
+.form input {
+  margin-left: 100px;
+}
+
+.todo-text {
+  margin-left: 100px;
+  width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 0.5fr;
 }
