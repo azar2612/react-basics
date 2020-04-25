@@ -1,0 +1,14 @@
+.ls {
+  margin-top: 50px;
+  width: 650px;
+  display: grid;
+  grid-template-columns: 2fr 0.5fr;
+  button {
+    margin-top: 20px;
+    width: 200px;
+    height: 30px;
+    background-color: goldenrod;
+    color: white;
+    border: none;
+  }
+}
