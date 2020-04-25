@@ -13,6 +13,7 @@ const naviData = [
   "Instagram",
   "Githubfetch",
   "Form",
+  "Validateform",
   "Todo",
   "LiftState",
   "LocalStorage",
