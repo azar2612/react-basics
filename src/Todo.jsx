@@ -38,11 +38,33 @@ class TodoForm extends Component {
 
 class TodoText extends Component {
   render() {
-    const { todoObj } = this.props;
+    const { todo, completeFunc, deleteFunc } = this.props;
     return (
-      <>
-        <p>{todoObj.text}</p>
-      </>
+      <div className="todo-text">
+        {todo.id && (
+          <>
+            <h3 style={{ textDecoration: todo.completed && "line-through" }}>
+              {todo.text}
+            </h3>
+            <p style={{ cursor: "pointer" }}>
+              {todo.completed ? (
+                <span role="img" onClick={() => completeFunc(todo.id)}>
+                  &#11088;
+                </span>
+              ) : (
+                <span role="img" onClick={() => completeFunc(todo.id)}>
+                  &#9989;
+                </span>
+              )}
+            </p>
+            <p style={{ cursor: "pointer" }}>
+              <span role="img" onClick={() => deleteFunc(todo.id)}>
+                &#10062;
+              </span>
+            </p>
+          </>
+        )}
+      </div>
     );
   }
 }
@@ -51,8 +73,28 @@ class Todo extends Component {
   state = {
     todos: [],
   };
-  addTodo = (todo) =>
+
+  addTodo = (todo) => {
     this.setState(({ todos }) => ({ todos: [todo, ...todos] }));
+  };
+
+  completeTodo = (id) => {
+    this.setState(({ todos }) => ({
+      todos: todos.map((t) => {
+        if (t.id === id) {
+          return { ...t, completed: !t.completed }; //... is spread used for addition
+        } else {
+          return t;
+        }
+      }),
+    }));
+  };
+
+  deleteTodo = (id) => {
+    this.setState(({ todos }) => ({
+      todos: todos.filter((t) => t.id !== id),
+    }));
+  };
 
   render() {
     const { todos } = this.state;
@@ -60,7 +102,12 @@ class Todo extends Component {
       <>
         <TodoForm add={this.addTodo} />
         {todos.map((s) => (
-          <TodoText todoObj={s} />
+          <TodoText
+            key={s.id}
+            todo={s}
+            completeFunc={this.completeTodo}
+            deleteFunc={this.deleteTodo}
+          />
         ))}
       </>
     );
