@@ -17,6 +17,8 @@ const naviData = [
   "Todo",
   "LiftState",
   "LocalStorage",
+  "Redux",
+  "Mobx",
 ];
 
 const Navigation = () => (

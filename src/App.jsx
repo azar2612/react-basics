@@ -14,6 +14,8 @@ import Validateform from "./Validateform";
 import Todo from "./Todo";
 import LiftState from "./LiftState";
 import LocalStorage from "./LocalStorage";
+import Redux from "./Redux";
+import Mobx from "./Mobx";
 
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
@@ -57,6 +59,8 @@ const App = () => (
         <Route exact path="/LiftState" component={LiftState} />
         <Route exact path="/LocalStorage" component={LocalStorage} />
         <Route exact path="/Validateform" component={Validateform} />
+        <Route exact path="/Redux" component={Redux} />
+        <Route exact path="/Mobx" component={Mobx} />
       </Switch>
     </BrowserRouter>
   </div>
