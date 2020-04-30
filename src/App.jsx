@@ -13,9 +13,11 @@ import Form from "./Form";
 import Validateform from "./Validateform";
 import Todo from "./Todo";
 import LiftState from "./LiftState";
+
 import LocalStorage from "./LocalStorage";
 import Redux from "./Redux";
 import Mobx from "./Mobx";
+import HooksBasic from "./HooksBasic";
 
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
@@ -61,6 +63,7 @@ const App = () => (
         <Route exact path="/Validateform" component={Validateform} />
         <Route exact path="/Redux" component={Redux} />
         <Route exact path="/Mobx" component={Mobx} />
+        <Route exact path="/hooks-basic" component={HooksBasic} />
       </Switch>
     </BrowserRouter>
   </div>
