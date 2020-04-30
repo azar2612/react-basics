@@ -2,25 +2,27 @@ import React from "react";
 import { connect } from "react-redux";
 import { incrementAction, decrementAction } from "./actions";
 
-const Counter = ({ title, incre, decre, counter }) => (
-  <>
-    <h3>{title}</h3>
-    <button type="button" onClick={incre}>
+
+const ReduxCounter = ({ count, incrementAction, decrementAction }) => (
+  <div className="counter">
+    <h3>Counter</h3>
+    <button type="button" onClick={incrementAction}>
       +
     </button>
-    <p>{counter}</p>
-    <button type="button" onClick={decre}>
+    <p>{count}</p>
+    <button type="button" onClick={decrementAction}>
       -
     </button>
-  </>
+  </div>
 );
-// Mapping state into Props
+
 const mapStateToProps = (state) => ({
-  counter: state.count,
+  count: state.count,
 });
-// Calling Actions thro Props
+
 const mapDispatchToProps = {
-  incre: incrementAction,
-  decre: decrementAction,
+  incrementAction,
+  decrementAction,
 };
-export default connect(mapStateToProps, mapDispatchToProps)(Counter);
+
+export default connect(mapStateToProps, mapDispatchToProps)(ReduxCounter);
