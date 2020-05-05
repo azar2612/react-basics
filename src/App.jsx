@@ -17,7 +17,7 @@ import Lifecycle from "./Lifecycle";
 import PropTypes from "./PropTypes";
 import CompoWrap from "./CompoWrap";
 import RouteExample from "./RouteExample";
-import { BlogPost, ArticlePost } from "./RouteExample/UrlParam";
+import { BlogPost, ArticlePost } from "./RouteExample/Url";
 import CheckBoxEco from "./CheckBoxEco";
 import TestCase from "./TestCase";
 
