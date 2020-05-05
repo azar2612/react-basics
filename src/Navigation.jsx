@@ -19,7 +19,16 @@ const naviData = [
   "LocalStorage",
   "redux",
   "mobx",
-  "hooks-basic"
+  "hooks-basic",
+  "CRUD-WO-Hooks",
+  "CRUD-Hooks",
+  "lifecycle",
+  "proptypes",
+  "compo-wrap",
+  "route-example",
+  "url",
+  "checkbox-eco",
+  "test-case",
 ];
 
 const Navigation = () => (
